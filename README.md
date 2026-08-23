@@ -1,0 +1,2 @@
+# UAScribe
+UAScribe Privacy Policy
