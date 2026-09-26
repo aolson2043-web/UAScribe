@@ -84,3 +84,6 @@ Before announcing the site:
 - Social preview: `assets/uascribe-social-card.png`
 
 The brand palette remains navy `#17324D`, green `#2F8F6B`, and soft gray `#F3F6F7`.
+
+## September 26 website copy and QR update
+Homepage: Without the monthly subscription. Flight reports: Share your work. Support: Help with UAScribe. A static App Store QR code appears on the homepage and Download page; it uses the official direct product link and no tracking or expiring redirect service. Upload all updated HTML pages and the assets folder, including uascribe-app-store-qr.png.
