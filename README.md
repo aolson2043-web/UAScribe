@@ -87,3 +87,11 @@ The brand palette remains navy `#17324D`, green `#2F8F6B`, and soft gray `#F3F6F
 
 ## September 26 website copy and QR update
 Homepage: Without the monthly subscription. Flight reports: Share your work. Support: Help with UAScribe. A static App Store QR code appears on the homepage and Download page; it uses the official direct product link and no tracking or expiring redirect service. Upload all updated HTML pages and the assets folder, including uascribe-app-store-qr.png.
+
+
+Google Analytics update
+- Measurement ID: G-WLELKDGN0F on every HTML page.
+- Custom event: app_store_click, including QR taps. QR camera scans go directly to Apple and cannot be counted by website analytics. Clicks do not confirm installs or purchases.
+- Upload all ZIP contents, including assets, to the GitHub Pages repository.
+- After deployment, open the website and click an App Store link; check GA4 Realtime. Mark app_store_click as a key event in GA4 if desired.
+- Search Console DNS verification and sitemap submission are separate steps.
