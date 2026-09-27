@@ -1,7 +1,5 @@
-UAScribe SEO and App Store conversion update — September 26, 2026
+UAScribe website — September 27, 2026
 
-Upload ALL contents of this folder to the GitHub Pages repository root, including assets and the new part-107-flight-records.html. Keep CNAME and .nojekyll.
+Upload all contents to the GitHub repository root, including assets/videos and its three MP4s and poster JPGs. Keep CNAME and .nojekyll.
 
-Includes: homepage download/desktop QR placement, a real report preview, mobile-first download buttons, Apple Smart App Banner metadata on all pages, expanded flight log content, new Part 107 documentation page, descriptive page titles, internal links, updated sitemap, and existing Analytics G-WLELKDGN0F and app_store_click tracking.
-
-After deployment: hard-refresh the website; check download links and Analytics Realtime. In Search Console inspect https://uascribe.com/part-107-flight-records.html and request indexing. Existing sitemap URL is unchanged. Safari controls display of its native Smart App Banner; desktop emulation cannot verify it. QR scans go directly to Apple and are not measured by the website click event.
+Adds captioned, on-demand walkthroughs to Quotes and Flight Reports; clear green trial offer; printing information; and local-record privacy messaging. Analytics G-WLELKDGN0F and app_store_click tracking remain enabled. No free template or signup form added. Original app-generated PDF files were not supplied, so the site uses the real report screenshot and walkthrough rather than a reconstructed downloadable PDF. Videos retain literal app button labels such as Export PDF.
