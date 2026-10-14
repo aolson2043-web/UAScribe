@@ -13,3 +13,11 @@ document.addEventListener('click', (event) => {
     transport_type: 'beacon'
   });
 });
+
+document.addEventListener('click', (event) => {
+  const link = event.target.closest && event.target.closest('a[download]');
+  if (!link || typeof window.gtag !== 'function') return;
+  const url = new URL(link.href);
+  if (url.origin !== location.origin || !url.pathname.startsWith('/assets/downloads/')) return;
+  window.gtag('event', 'resource_download', {send_to:'G-WLELKDGN0F', resource_name:url.pathname.split('/').pop(), link_url:url.pathname});
+});

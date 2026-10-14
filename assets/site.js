@@ -1,3 +1,5 @@
+// Hide the desktop scan helper on phones, including landscape layouts.
+document.documentElement.classList.toggle('phone-device', /iPhone|iPod|Android.*Mobile/i.test(navigator.userAgent));
 (() => {
   const value = window.UASCRIBE_APP_STORE_URL;
   if (!value) return;
