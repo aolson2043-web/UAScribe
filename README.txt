@@ -1,7 +1,7 @@
-UAScribe website screenshot update
+UAScribe modern visual update
 
-Extract this ZIP and upload its HTML files and assets folder to the root of your existing GitHub repository. Replace matching files. Do not upload this README or the ZIP itself. Existing media and other pages remain in place.
+Extract and upload all HTML files and the assets folder to the root of your existing GitHub repository. Replace matching files. Do not upload this README or the ZIP itself. This is an update package; existing videos, logos, resources, PDFs and JavaScript remain in the repository.
 
-Includes all seven new branded screenshots, optimized as WebP without cropping or changing their artwork; a responsive homepage gallery; relevant images on Quotes, Flight Reports, Aircraft Maintenance, Preflight, Part 107 and Public Safety pages; and the About sentence corrected to: UAScribe was created by an active law enforcement drone pilot and USMC veteran.
+Includes a distinct navy navigation bar with green active states and a white logo panel; a softly shaded hero; a navy screenshot gallery; a pale green value section; a framed About section; separated resources/FAQs; a navy final call to action and footer. All seven new screenshots and the corrected About sentence are included. Feature pages share the new navigation and visual styling.
 
-Uses your current GitHub pages as the base. No app build, DNS change or Cloudflare rule change is included. Static references and image dimensions checked; browser/mobile visual checks remain after upload.
+Static structure and asset checks completed. Browser/mobile visual verification remains after upload. No app build or DNS changes.
