@@ -1,7 +1,7 @@
-UAScribe — About section update
+UAScribe website screenshot update
 
-Upload index.html to the root of your existing aolson2043-web/UAScribe GitHub repository, replacing the current index.html. Do not upload this README.
+Extract this ZIP and upload its HTML files and assets folder to the root of your existing GitHub repository. Replace matching files. Do not upload this README or the ZIP itself. Existing media and other pages remain in place.
 
-The homepage now includes an About UAScribe section with the app's public safety origins and an About link in its footer. Existing branding, navigation, analytics, pricing, and download links are preserved.
+Includes all seven new branded screenshots, optimized as WebP without cropping or changing their artwork; a responsive homepage gallery; relevant images on Quotes, Flight Reports, Aircraft Maintenance, Preflight, Part 107 and Public Safety pages; and the About sentence corrected to: UAScribe was created by an active law enforcement drone pilot and USMC veteran.
 
-This package does not change DNS or the Cloudflare redirect rule.
+Uses your current GitHub pages as the base. No app build, DNS change or Cloudflare rule change is included. Static references and image dimensions checked; browser/mobile visual checks remain after upload.

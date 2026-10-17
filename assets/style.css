@@ -183,3 +183,19 @@ details p{color:var(--muted);padding-top:15px;margin-bottom:0}
 @media(min-width:1101px) and (max-width:1240px){.nav-shell{flex-wrap:wrap;padding-top:14px;padding-bottom:12px;gap:12px 24px}.site-header{position:static}.nav-shell nav{order:3;width:100%;justify-content:flex-start;overflow-x:auto;padding:5px 0 8px}.nav-shell>.button{margin-left:auto}}
 /* Keep branded trial text large enough for its color contrast. */
 .trial-highlight{font-size:1.2rem}
+
+
+/* Updated branded app screenshots: retain full artwork without added device frames. */
+.branded-gallery{display:grid;gap:26px;align-items:start}
+.branded-gallery-full{grid-template-columns:repeat(4,minmax(0,1fr))}
+.branded-gallery-focused{grid-template-columns:repeat(3,minmax(0,1fr));max-width:960px}
+.branded-gallery figure{margin:0;min-width:0}
+.branded-gallery a{display:block;border-radius:15px;overflow:hidden;background:var(--navy);box-shadow:0 12px 30px #06284b1c}
+.branded-gallery a:focus-visible{outline:3px solid var(--green);outline-offset:5px}
+.branded-gallery img{display:block;width:100%;height:auto;aspect-ratio:1320/2868}
+.branded-gallery figcaption{padding-top:14px;font-size:.9rem;line-height:1.55}
+.branded-gallery figcaption strong,.branded-gallery figcaption span{display:block}
+.branded-gallery figcaption span{color:var(--muted);margin-top:4px}
+.branded-feature-image{height:auto!important;object-fit:contain!important;border-radius:14px!important}
+@media(max-width:1000px){.branded-gallery-full{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}}
+@media(max-width:760px){.branded-gallery{display:grid;grid-auto-flow:column;grid-auto-columns:min(78vw,320px);grid-template-columns:none;gap:18px;overflow-x:auto;scroll-snap-type:x proximity;padding:4px 4px 20px;max-width:100%}.branded-gallery figure{scroll-snap-align:start}.screenshot-section .section-heading{margin-bottom:24px}}
