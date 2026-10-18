@@ -7,3 +7,5 @@ The homepage and Flight Reports page include a four-section report viewer: Missi
 The report and excerpts use the uploaded app-generated PDF, with a light DEMO watermark. Website previews were captured from the finalized saved PDF and visually checked for legible text. The uploaded original is unchanged.
 
 Checked: all four preview images, all single-page PDFs, watermark and original report text, viewer links, one visible section at a time, tab/panel accessibility targets, and JavaScript syntax. Desktop/mobile browser layout still needs checking after publishing.
+
+October 18 correction: Restored the empty aircraft screenshot from its original artwork, refreshed the image URL on the homepage and aircraft page, and changed the creator line to "Built by a USMC veteran and active law enforcement drone pilot." All seven screenshot images decode successfully.
