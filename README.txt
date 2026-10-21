@@ -1,11 +1,10 @@
-UAScribe website - embedded demo report reader
+UAScribe website — SEO and current-feature update, October 21, 2026
 
-Extract this ZIP and upload the HTML files and assets folder to the ROOT of your existing GitHub repository, replacing matching files and MERGING the assets folder. Keep existing logos, scripts, videos, and other files. Do not delete the repository contents first. Do not upload this README or the ZIP itself.
+Extract UAScribe-Website-SEO-2026-10-21.zip. Upload the extracted HTML files,
+sitemap.xml, and assets folder to the ROOT of aolson2043-web/UAScribe, where
+index.html already lives. Replace matching files and merge the assets folder.
+Do not delete the repository first or upload the ZIP itself.
 
-The homepage and Flight Reports page include a four-section report viewer: Mission summary, Mission description, Preflight review, and Linked quote. Only one section appears at a time. Readers can choose a tab or use Previous/Next. On mobile, the tabs use two rows. Each section opens its own full-size, single-page watermarked PDF. The complete four-page PDF remains available as an optional link.
-
-The report and excerpts use the uploaded app-generated PDF, with a light DEMO watermark. Website previews were captured from the finalized saved PDF and visually checked for legible text. The uploaded original is unchanged.
-
-Checked: all four preview images, all single-page PDFs, watermark and original report text, viewer links, one visible section at a time, tab/panel accessibility targets, and JavaScript syntax. Desktop/mobile browser layout still needs checking after publishing.
-
-October 18 correction: Restored the empty aircraft screenshot from its original artwork, refreshed the image URL on the homepage and aircraft page, and changed the creator line to "Built by a USMC veteran and active law enforcement drone pilot." All seven screenshot images decode successfully.
+This is a complete website snapshot, including existing images, PDFs, scripts
+and videos. No app build, dependency installation or DNS change is required.
+See README.md for the change summary and publication checks.

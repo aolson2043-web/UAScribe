@@ -1,60 +1,51 @@
-# UAScribe website — October 14, 2026 update
+# UAScribe website — SEO and latest-feature update
 
-Static site for https://uascribe.com, served by the existing GitHub Pages repository.
+Prepared October 21, 2026 for https://uascribe.com.
 
-## Upload this update
+## Upload to GitHub
 
-1. Extract `UAScribe-Website-SEO-Update-2026-10-14.zip`.
-2. Open `aolson2043-web/UAScribe` on GitHub and stay at the repository root, where `index.html` is visible.
-3. Choose **Add file → Upload files**.
-4. Drag the extracted files and `assets` folder into the upload area. Upload the contents, not the ZIP itself and not an extra enclosing folder.
-5. Commit the upload to `main`. Existing videos and video posters are already in the repository and are reused by this update; they are not duplicated in this ZIP. The upload adds or replaces individual files.
-6. After Pages finishes publishing, check the homepage, Resources, preflight PDF, quote PDF, maintenance PDF, Support, and Privacy on uascribe.com.
+1. Extract `UAScribe-Website-SEO-2026-10-21.zip`.
+2. Open `aolson2043-web/UAScribe` and select **Add file → Upload files** at the repository root, where `index.html` lives.
+3. Upload the extracted files and `assets` folder. Upload the contents, not the ZIP or an additional enclosing folder. Replace matching files and merge the assets folder; do not delete the repository first.
+4. Commit the upload to `main` and let GitHub Pages finish publishing.
+5. Check the homepage, Preflight, Maintenance, Flight Reports, Resources, and Support on desktop and iPhone. Confirm App Store buttons and the sectioned demo report still work.
 
-## Included changes
+This ZIP contains a complete snapshot, including existing videos, images, PDFs, scripts, and CNAME. No app build or server-side build step is needed.
 
-- Shared navigation and footer across site pages; home links use `/`.
-- Simpler homepage, report preview beside the heading on desktop and beneath it at narrow widths, quote screenshot replacing the repeated report image, and one consolidated “Why UAScribe” section.
-- Phone QR hiding at narrow widths plus phone-device detection for landscape layouts. A physical-phone check is still needed after upload.
-- Visible US price: 3 free reports, then $29.99 once. The US App Store listing was checked October 14, 2026; regional prices may differ.
-- Resources hub; quote/pricing guide; maintenance-log guide; factual drone-logbook comparison with official provider links.
-- Three branded printable PDF resources, with no email signup gate.
-- MobileApplication and Organization structured data, visible FAQ markup on home and support, breadcrumbs, page-specific social cards, and updated search titles and descriptions.
-- Download landing page marked `noindex,follow` and removed from the sitemap. Every indexable sitemap entry has an actual update date.
-- Existing Google Analytics ID and `app_store_click` event preserved; PDF links also emit `resource_download` on the website.
+## Changes
 
-## Cloudflare: finish the real 301 redirect
+- Kept existing page URLs and canonical targets because Search Console already associates queries with the relevant landing pages.
+- Strengthened the UAV preflight checklist page with aircraft, site, airspace, and crew checks; a clearer heading and description; connected flight-timer and maintenance links; and visible FAQs.
+- Strengthened the drone maintenance page around UAV/UAS maintenance logs, aircraft records, and running aircraft flight-time totals. Added a service-entry guide and answers about aircraft totals, the timer, telemetry, and local records.
+- Corrected the outdated maintenance-template statement that automatic aircraft flight-time accumulation was unavailable.
+- Added homepage features for dedicated preflight, the timer and paired Apple Watch controls, aircraft totals, and saved drafts in History.
+- Updated flight-report, commercial-pilot, public-safety, comparison, support, and flight-log guide copy for current features.
+- Added contextual links from the homepage and Resources to the search-focused landing pages.
+- Aligned search/social descriptions with the content. Updated application features, added the referenced WebSite schema node, and regenerated FAQ structured data from visible answers.
+- Updated sitemap dates for edited pages. Kept the download landing page out of the sitemap and preserved its noindex instruction.
 
-GitHub Pages cannot read an Apache `.htaccess` file or a Cloudflare Pages `_redirects` file. This package deliberately does not pretend either file will apply a server redirect on GitHub Pages.
+Branding, sample report viewer, print/share language, App Store links, trial/pricing copy, privacy messaging, GA4 ID `G-WLELKDGN0F`, and the existing `app_store_click` event are preserved. Existing printable resources remain available; no new template or email signup was added.
 
-In Cloudflare for `uascribe.com`, go to **Rules → Overview → Create rule → Redirect Rule**. Use a custom filter expression:
+## After publication
 
-```
-(http.host in {"uascribe.com" "www.uascribe.com"} and http.request.uri.path eq "/index.html")
-```
+Use Search Console URL Inspection to request indexing of these updated pages once:
 
-Then choose:
+- https://uascribe.com/
+- https://uascribe.com/preflight-checklist.html
+- https://uascribe.com/aircraft-maintenance.html
+- https://uascribe.com/drone-maintenance-log-template.html
+- https://uascribe.com/flight-reports.html
 
-- Name: `Canonical homepage`
-- Redirect URL: `https://uascribe.com/`
-- Type: Static
-- Status: `301`
-- Preserve query string: On
+The sitemap remains https://uascribe.com/sitemap.xml. Compare query and landing-page impressions, clicks, and positions over the next 28 days. Small counts fluctuate; these edits do not guarantee a ranking or traffic increase.
 
-The rule works only for DNS records proxied through Cloudflare. If the site currently uses DNS-only records, do not change DNS blindly; confirm the Cloudflare proxy and HTTPS configuration first. No DNS or Cloudflare changes were made by this update.
+Verify `app_store_click` in GA4 when testing a button. If download intent is your conversion goal, mark that event as a key event in GA4; website files cannot change account-level settings. This event measures website button clicks, not completed App Store installations or purchases. QR scans going directly to Apple are not measured by the website click event.
 
-Official instructions: https://developers.cloudflare.com/rules/url-forwarding/single-redirects/create-dashboard/
+## Existing homepage alias
 
-After activation, opening `https://uascribe.com/index.html?utm_source=test` should return an HTTP 301 to `https://uascribe.com/?utm_source=test`. The target `/` does not match the rule, so it will not redirect in a loop.
+Internal home links and the homepage canonical use `/`. A genuine `/index.html` → `/` HTTP 301 must be configured at the hosting/proxy layer; this ZIP does not create that redirect. Preserve campaign query strings when configuring a redirect. No Cloudflare or DNS settings were changed.
 
-## Support email: keep delivery working
+## Validation
 
-The current working contact is `aodigital.lab@gmail.com`. The footer points visitors to the branded support page. A nonexistent `support@uascribe.com` address has not been published.
+Checked HTML for one H1 each, unique titles, local file and fragment targets, nonempty assets, canonical and sitemap consistency, JSON-LD syntax, and agreement between visible FAQ answers and schema. Existing JavaScript was preserved and syntax checked. An interactive browser was unavailable for this pass; check the live desktop/iPhone layout after upload.
 
-To adopt the domain address, set up Cloudflare Email Routing (or your email provider) to forward `support@uascribe.com` to the current inbox, complete destination verification, and test delivery from another mailbox. Once verified, replace `aodigital.lab@gmail.com` with `support@uascribe.com` in `support.html`, `privacy.html`, and the Organization contact details embedded in the HTML pages. A forwarding address alone does not configure sending mail as that address.
-
-## Verification
-
-The upload package is checked for local links and assets against the package plus the existing repository inventory, sitemap consistency, canonical URLs, JSON-LD, shared navigation, metadata, JavaScript syntax, image dimensions, and PDF page counts. Printable PDFs were rendered and visually inspected. An interactive browser and physical iPhone were not available for this pass; check the live mobile layout after upload.
-
-No new app build is needed for these website changes.
+References: [FAA AC 107-2A](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_107-2A.pdf) and [Google SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide). Features follow the current website and the owner's confirmation that aircraft totals are in the public App Store release.
