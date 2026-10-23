@@ -11,7 +11,7 @@ document.documentElement.classList.toggle('phone-device', /iPhone|iPod|Android.*
   document.querySelectorAll('.app-download').forEach((link) => {
     link.href = url.href;
     link.rel = 'noopener';
-    link.textContent = 'Download on the App Store';
+    if (!link.dataset.ctaLocation) link.textContent = 'Download on the App Store';
   });
 
   document.querySelectorAll('.download-note').forEach((note) => { note.hidden = true; });
