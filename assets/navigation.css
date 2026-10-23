@@ -1,0 +1,12 @@
+/* Keep both audiences visible in the shared top navigation. */
+@media(max-width:1440px){
+ .site-header .nav-shell{grid-template-columns:168px 1fr;gap:8px 20px;min-height:0;padding-top:10px;padding-bottom:0}
+ .site-header .nav-shell>.button{grid-column:2;grid-row:1;justify-self:end}
+ .site-header .nav-shell nav{grid-column:1/-1;grid-row:2;width:100%;justify-content:flex-start;gap:8px;padding:0 0 8px;flex-wrap:wrap;overflow:visible}
+ .site-header nav a{padding:7px 10px;font-size:.82rem}
+}
+@media(max-width:760px){
+ .site-header .nav-shell{grid-template-columns:140px 1fr;gap:8px 12px;padding:10px 20px 0}
+ .site-header .nav-shell nav{gap:4px 6px;flex-wrap:wrap;overflow:visible}
+ .site-header nav a{font-size:.78rem;padding:7px 9px;white-space:nowrap}
+}

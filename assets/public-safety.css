@@ -1,0 +1,25 @@
+
+.public-safety-page .field-hero-copy{max-width:54%;width:600px}
+.public-safety-page .field-hero h1{font-size:clamp(2.8rem,4.1vw,4rem)}
+.public-safety-page .creator-note{padding-top:22px;padding-bottom:22px}
+.public-safety-page .creator-note p{margin-bottom:0}
+.ps-importance{background:#082b49;color:#e0eaf2}
+.ps-importance h2,.ps-importance h3{color:#fff}
+.ps-importance .eyebrow{color:#a6e4ca}
+.ps-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.ps-grid article{padding:28px;border:1px solid #34566f;border-top:3px solid #009b62;border-radius:14px;background:#113650}
+.ps-grid h3{font-size:1.45rem;margin:14px 0}
+.ps-grid p{margin-bottom:0;color:#d5e2ec}
+.ps-label{font-size:.7rem;letter-spacing:.09em;color:#a6e4ca;font-weight:750}
+.ps-mode{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:70px;align-items:center}
+.ps-mode h2{font-size:clamp(2rem,3.2vw,3rem)}
+.ps-mode figure{margin:0;text-align:center}.ps-mode img{width:100%;max-height:530px;object-fit:contain}.ps-mode figcaption{font-size:.8rem;color:#5e6f7b;margin-top:12px}
+.ps-mode .button{background:#007a4b;border-color:#007a4b;margin:10px 0 16px}.ps-mode .small{font-size:.82rem}
+.ps-record{border-top:1px solid #d5e3df}
+.ps-checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 30px;list-style:none;padding:0;margin:0 0 30px}
+.ps-checklist li{padding:17px 18px 17px 42px;background:#f1f7f4;border-radius:10px;position:relative;color:#17324d;font-weight:650}
+.ps-checklist li:before{content:'✓';position:absolute;left:17px;color:#007a4b}
+.ps-record>p{max-width:850px}.ps-privacy{background:#eff6f3}.ps-privacy .section-heading{margin-bottom:24px}.ps-privacy details{max-width:900px;border-top:1px solid #c6d9cf;padding-top:20px}.ps-privacy summary{cursor:pointer;font-weight:750;color:#17324d;margin-bottom:18px}
+.ps-closing{background:#06284b;color:#fff}.ps-closing h2{color:#fff;font-size:clamp(2rem,3vw,2.8rem)}.ps-closing .eyebrow,.ps-closing .trial-highlight{color:#a6e4ca}.ps-closing .small{color:#c8d9e6}.ps-closing>.button{flex-shrink:0;background:#009b62;border-color:#009b62}.ps-closing p{color:#e0eaf2}
+@media(max-width:980px){.ps-mode{grid-template-columns:1fr 240px;gap:30px}}
+@media(max-width:760px){.public-safety-page .field-hero-copy{max-width:none;width:100%}.public-safety-page .field-hero h1{font-size:clamp(2.25rem,9.4vw,3.65rem)}.ps-grid,.ps-mode,.ps-checklist{grid-template-columns:1fr}.ps-grid article{padding:23px}.ps-mode figure{max-width:280px;margin:auto}.ps-closing>.button{width:100%;justify-content:center}}
