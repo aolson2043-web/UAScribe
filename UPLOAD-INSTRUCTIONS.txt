@@ -1,0 +1,11 @@
+UAScribe templates + MailerLite website update
+
+Upload the CONTENTS of this ZIP to the top level of the main branch in aolson2043-web/UAScribe. Do not create a folder named after the ZIP. Merge the assets folder with the existing assets folder; keep existing unrelated files.
+
+Includes all five template downloads, the free-template hub, visible resource links, the MailerLite signup link, and updated email privacy wording. The signup form is embedded directly on the three template pages using signup-form.html and the supplied MailerLite HTML. A hosted-page fallback is included. Upload signup-form.html alongside index.html.
+
+After GitHub Pages finishes deploying, test:
+https://uascribe.com/free-drone-templates.html
+Click each download and Sign Me Up.
+
+The confirmation and welcome email delivery must be tested in MailerLite with an email address you control. Website link integration does not activate the automation.
