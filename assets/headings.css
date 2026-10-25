@@ -1,0 +1,5 @@
+/* Shared heading hierarchy; text capitalization is present in the HTML. */
+h1,h2,h3,h4,h5,h6{font-weight:800;letter-spacing:-.025em;line-height:1.14;text-wrap:balance}
+h2{margin-bottom:1rem}h3{letter-spacing:-.015em;line-height:1.22}
+.template-signup h2{font-size:clamp(1.8rem,3vw,2.5rem);max-width:20ch}
+.template-signup .eyebrow{font-size:.73rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#007a4b}

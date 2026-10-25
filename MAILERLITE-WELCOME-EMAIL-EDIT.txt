@@ -1,0 +1,6 @@
+REQUIRED MAILERLITE EDIT
+In UAScribe Welcome, change the Get Free Templates button URL to:
+https://uascribe.com/template-downloads.html?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome_templates
+Save the email and activate/resume the workflow. Keep double opt-in enabled.
+The delivery page is noindex and not linked from public website navigation.
+This is an email delivery funnel, not access control: static files and a shared delivery URL can still be accessed directly. Strong access control requires a backend/token system.
