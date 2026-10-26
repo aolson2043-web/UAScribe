@@ -7,7 +7,7 @@
     });
   };
   const params = new URLSearchParams(location.search);
-  const allowedSources = new Set(['preflight_pdf', 'maintenance_pdf', 'public_safety_pdf', 'flight_xlsx', 'maintenance_xlsx']);
+  const allowedSources = new Set(['preflight_pdf', 'maintenance_pdf', 'public_safety_pdf', 'flight_log_pdf', 'incident_pdf', 'flight_xlsx', 'maintenance_xlsx']);
   const requestedSource = params.get('utm_source');
   const source = allowedSources.has(requestedSource) ? requestedSource : 'template_website';
   if (allowedSources.has(requestedSource)) track('template_return_visit', {template_source: source});
