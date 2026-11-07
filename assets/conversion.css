@@ -64,7 +64,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
 @media(max-width:640px){.pilot-records-grid{grid-template-columns:1fr}.pilot-records-grid article{padding:24px}}
 
 /* Consistent headings and readable founder-story copy. */
-body :is(h1,h2,h3,h4,h5,h6){text-transform:uppercase;letter-spacing:.025em}
+body :is(h1,h2,h3,h4,h5,h6){text-transform:none;font-variant-caps:all-small-caps;letter-spacing:.045em}
 .about-story p.about-rebuild{color:#102b43!important}
 .screen-proof{padding-top:64px;padding-bottom:64px}
 .screen-proof .section-heading{max-width:780px;margin-bottom:32px}
