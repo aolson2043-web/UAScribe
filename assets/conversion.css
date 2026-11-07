@@ -51,3 +51,14 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
 .page-lead.template-lead{padding:48px 40px!important;margin-top:28px;border-radius:18px;overflow:hidden}.template-lead .small{color:#d1e2eb}.template-lead .small a{color:#b2f0d4}.template-lead .template-preview{margin:0}.template-app-section .eyebrow{color:#007450}
 @media(max-width:640px){.page-lead.template-lead{padding:28px 22px!important;margin-top:20px}.template-lead h1{font-size:2.15rem}}
 @media(max-width:640px){.site-header .nav-shell nav{scrollbar-width:none}.site-header .nav-shell nav::-webkit-scrollbar{display:none}}
+
+/* Readable public safety introduction and personal recordkeeping features. */
+.ps-importance .section-heading p.ps-documentation-intro{color:#fff!important}
+.pilot-records-section{border-top:1px solid #dce6e9}
+.pilot-records-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:30px}
+.pilot-records-grid article{padding:30px;background:#eef5f8;border:1px solid #d3e1e8;border-radius:16px;color:#102b43}
+.pilot-records-grid .eyebrow{color:#006f4c;font-size:.7rem}
+.pilot-records-grid h3{color:#06284b;font-size:1.4rem;line-height:1.25;margin:16px 0}
+.pilot-records-grid p{color:#405a6c;line-height:1.7}
+.pilot-records-grid .small{font-size:.8rem;color:#526a7c}
+@media(max-width:640px){.pilot-records-grid{grid-template-columns:1fr}.pilot-records-grid article{padding:24px}}
